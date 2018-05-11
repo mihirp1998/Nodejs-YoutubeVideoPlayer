@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Education</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.mb.YTPlayer.js"></script>
+	<script src ="main.js"></script>
+	<link rel ="stylesheet" href = "temp_style.css">
+	    <meta charset="utf-8">
+  
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'> 
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <h1 class="heading">Introduction Swift</h1>
+</head>
+<body>
+<div class = "container1">
+
+<table class="rwd-table">
+  <tr>
+    <th>Playlist</th> 
+  </tr>
+  <tr>
+    <td data-th="Movie Title"  id ="movie1"  name ="movie1" >Module 1 - Basics</td>
+
+  </tr>
+  <tr>
+    <td data-th="Movie Title" id ="movie2"  name ="movie2">Module 2 - Operators</td>
+
+  </tr>
+  <tr>
+    <td data-th="Movie Title " id ="movie3"  name ="movie3">Module 3 - Arrays</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie4"  name ="movie4">Module 4 - Control FLow</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie5"  name ="movie5">Module 5 - Functions</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie6"  name ="movie6">Module 6 - Closures</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie7"  name ="movie7">Module 7 - Enumerations</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie8"  name ="movie8">Module 8 - Structures</td>
+  </tr>
+
+  <tr>
+    <td data-th="Movie Title" id ="movie9"  name ="movie9">Module 9 - Classes</td>
+  </tr>
+
+</table>
+
+
+<div id="bgndVideo" class="player"></div>
+</div>
+<div class="container">
+	 	<div class="col-md-6 offset-md-3" style="margin-top:2em;">
+		 <h6 style="margin-bottom:1em;"> Comment Box </h6>
+			<div class="card paper">
+					<form class="myform">
+					<fieldset class="form-group">
+						<input type="Email" 
+						class="form-control" 
+						name="name" 
+						id="name" 
+						placeholder="Add Email ID">
+
+						<input type="text" 
+						class="form-control"
+						name="comment" 
+						id="comment" 
+						placeholder="Add a comment">
+
+					</fieldset>
+					<button type="submit" class="btn btn-sm btn-success">Post</button>
+					<button type="button" id="cancel" class="btn btn-sm btn-secondary">Cancel</button>
+				</form>	
+
+
+				<details>
+					<summary style="padding:1em;">Old comments</summary>
+					<ul class="list-group">
+					     
+				  </ul> 
+				</details>
+				<ul id="lastComment" class="list-group">
+
+				 {% for item in items %}
+       						 {% include "item.html" %}
+    					  {% endfor %}
+					
+				</ul>
+			
+			</div>
+		</div> 
+	 </div>
+
+
+
+
+
+</body>
+</html>
